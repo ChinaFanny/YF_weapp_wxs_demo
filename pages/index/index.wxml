@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{list}}" wx:key="id" class="list">
+    <view>姓名：{{item.name}}</view>
+    <wxs module="m">
+      var getCarCount = function(array) {
+        var count = 0;
+        for (var i = 0; i < array.length; ++i) {
+          count++;
+        }
+        return count;
+      }
+      module.exports.getCarCount = getCarCount;
+    </wxs>
+    <view class="gray-color">拥有{{m.getCarCount(item.cars)}}辆车</view>
+  </view>
+</view>
