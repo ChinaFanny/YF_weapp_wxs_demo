@@ -37,6 +37,7 @@ list: [{
 
 
 在wxml使用如上代码进行统计即可
+![image](https://github.com/ChinaFanny/YF_weapp_wxs_demo/blob/master/images/screenshot.jpeg?raw=true)
 
 
 
